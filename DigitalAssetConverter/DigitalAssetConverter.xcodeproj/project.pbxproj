@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		032BDFF7240B45FF00453C99 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 032BDFF6240B45FF00453C99 /* main.cpp */; };
+		032BE00B240B46BF00453C99 /* ImageConverter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 032BE001240B46BE00453C99 /* ImageConverter.cpp */; };
+		032BE00C240B46BF00453C99 /* AnimDataConverter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 032BE002240B46BE00453C99 /* AnimDataConverter.cpp */; };
+		032BE00D240B46BF00453C99 /* ConvexHullAlgorithm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 032BE004240B46BE00453C99 /* ConvexHullAlgorithm.cpp */; };
+		032BE00E240B46BF00453C99 /* MeshDataConverter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 032BE008240B46BF00453C99 /* MeshDataConverter.cpp */; };
+		032BE00F240B46BF00453C99 /* DataConverter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 032BE009240B46BF00453C99 /* DataConverter.cpp */; };
+		032BE010240B46BF00453C99 /* Numerical.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 032BE00A240B46BF00453C99 /* Numerical.cpp */; };
+		032BE013240B46D600453C99 /* lodepng.mm in Sources */ = {isa = PBXBuildFile; fileRef = 032BE011240B46D500453C99 /* lodepng.mm */; };
+		032BE016240B46E300453C99 /* tinyxml2.mm in Sources */ = {isa = PBXBuildFile; fileRef = 032BE014240B46E300453C99 /* tinyxml2.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +33,24 @@
 /* Begin PBXFileReference section */
 		032BDFF3240B45FF00453C99 /* DigitalAssetConverter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DigitalAssetConverter; sourceTree = BUILT_PRODUCTS_DIR; };
 		032BDFF6240B45FF00453C99 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		032BDFFD240B46BE00453C99 /* ConvexHullAlgorithm.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ConvexHullAlgorithm.hpp; sourceTree = "<group>"; };
+		032BDFFE240B46BE00453C99 /* AnimDataConverter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AnimDataConverter.hpp; sourceTree = "<group>"; };
+		032BDFFF240B46BE00453C99 /* CommonProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonProtocols.h; sourceTree = "<group>"; };
+		032BE000240B46BE00453C99 /* ImageConverter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ImageConverter.hpp; sourceTree = "<group>"; };
+		032BE001240B46BE00453C99 /* ImageConverter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImageConverter.cpp; sourceTree = "<group>"; };
+		032BE002240B46BE00453C99 /* AnimDataConverter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AnimDataConverter.cpp; sourceTree = "<group>"; };
+		032BE003240B46BE00453C99 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		032BE004240B46BE00453C99 /* ConvexHullAlgorithm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConvexHullAlgorithm.cpp; sourceTree = "<group>"; };
+		032BE005240B46BF00453C99 /* DataConverter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DataConverter.hpp; sourceTree = "<group>"; };
+		032BE006240B46BF00453C99 /* Numerical.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Numerical.hpp; sourceTree = "<group>"; };
+		032BE007240B46BF00453C99 /* MeshDataConverter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MeshDataConverter.hpp; sourceTree = "<group>"; };
+		032BE008240B46BF00453C99 /* MeshDataConverter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MeshDataConverter.cpp; sourceTree = "<group>"; };
+		032BE009240B46BF00453C99 /* DataConverter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DataConverter.cpp; sourceTree = "<group>"; };
+		032BE00A240B46BF00453C99 /* Numerical.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Numerical.cpp; sourceTree = "<group>"; };
+		032BE011240B46D500453C99 /* lodepng.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = lodepng.mm; path = PNGLoader/lodepng.mm; sourceTree = "<group>"; };
+		032BE012240B46D600453C99 /* lodepng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lodepng.h; path = PNGLoader/lodepng.h; sourceTree = "<group>"; };
+		032BE014240B46E300453C99 /* tinyxml2.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = tinyxml2.mm; path = XMLParser/tinyxml2.mm; sourceTree = "<group>"; };
+		032BE015240B46E300453C99 /* tinyxml2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tinyxml2.h; path = XMLParser/tinyxml2.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +84,24 @@
 			isa = PBXGroup;
 			children = (
 				032BDFF6240B45FF00453C99 /* main.cpp */,
+				032BE012240B46D600453C99 /* lodepng.h */,
+				032BE011240B46D500453C99 /* lodepng.mm */,
+				032BE015240B46E300453C99 /* tinyxml2.h */,
+				032BE014240B46E300453C99 /* tinyxml2.mm */,
+				032BE002240B46BE00453C99 /* AnimDataConverter.cpp */,
+				032BDFFE240B46BE00453C99 /* AnimDataConverter.hpp */,
+				032BDFFF240B46BE00453C99 /* CommonProtocols.h */,
+				032BE003240B46BE00453C99 /* Constants.h */,
+				032BE004240B46BE00453C99 /* ConvexHullAlgorithm.cpp */,
+				032BDFFD240B46BE00453C99 /* ConvexHullAlgorithm.hpp */,
+				032BE009240B46BF00453C99 /* DataConverter.cpp */,
+				032BE005240B46BF00453C99 /* DataConverter.hpp */,
+				032BE001240B46BE00453C99 /* ImageConverter.cpp */,
+				032BE000240B46BE00453C99 /* ImageConverter.hpp */,
+				032BE008240B46BF00453C99 /* MeshDataConverter.cpp */,
+				032BE007240B46BF00453C99 /* MeshDataConverter.hpp */,
+				032BE00A240B46BF00453C99 /* Numerical.cpp */,
+				032BE006240B46BF00453C99 /* Numerical.hpp */,
 			);
 			path = DigitalAssetConverter;
 			sourceTree = "<group>";
@@ -119,7 +163,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				032BE00C240B46BF00453C99 /* AnimDataConverter.cpp in Sources */,
+				032BE016240B46E300453C99 /* tinyxml2.mm in Sources */,
+				032BE00B240B46BF00453C99 /* ImageConverter.cpp in Sources */,
 				032BDFF7240B45FF00453C99 /* main.cpp in Sources */,
+				032BE013240B46D600453C99 /* lodepng.mm in Sources */,
+				032BE00D240B46BF00453C99 /* ConvexHullAlgorithm.cpp in Sources */,
+				032BE00F240B46BF00453C99 /* DataConverter.cpp in Sources */,
+				032BE010240B46BF00453C99 /* Numerical.cpp in Sources */,
+				032BE00E240B46BF00453C99 /* MeshDataConverter.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
