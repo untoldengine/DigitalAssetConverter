@@ -12,6 +12,7 @@
 #include "MeshDataConverter.hpp"
 #include "AnimDataConverter.hpp"
 #include "ImageConverter.hpp"
+#include "ParticleDataConverter.hpp"
 #include <filesystem>
 #include <sys/stat.h>
 
@@ -54,7 +55,7 @@ void setPaths(){
 }
 
 int main(int argc, const char * argv[]) {
-        
+    
     std::string filename;
     std::string binaryPath;
     std::string imageNamePath;
@@ -74,8 +75,9 @@ int main(int argc, const char * argv[]) {
         std::cout<<"\t 1. Convert Mesh Data to binary"<<std::endl;
         std::cout<<"\t 2. Convert Animation Data to binary"<<std::endl;
         std::cout<<"\t 3. Convert Image Data to binary"<<std::endl;
-        std::cout<<"\t 4. Change the input/output directories"<<std::endl;
-        std::cout<<"\t 5. Quit"<<std::endl;
+        std::cout<<"\t 4. Convert Particle Data to binary"<<std::endl;
+        std::cout<<"\t 5. Change the input/output directories"<<std::endl;
+        std::cout<<"\t 6. Quit"<<std::endl;
         
         std::cin>>selection;
         
@@ -137,6 +139,27 @@ int main(int argc, const char * argv[]) {
                 
             case 4:
                 
+            {
+                ParticleDataConverter particleConverter;
+                
+                std::cout<<"\nEnter the source PEX file name (no extension) of the particle"<<std::endl;
+                
+                std::cin>>filename;
+                
+                if (particleConverter.readXML(inputPathFolder+filename+".pex")) {
+                    
+                    particleConverter.setParticleName(filename);
+                    
+                    particleConverter.writeBinaryToFile(outputPathFolder+filename+".u4d");
+                    
+                }
+                
+            }
+                
+                break;
+                
+            case 5:
+                
                 setPaths();
             
                 break;
@@ -150,7 +173,7 @@ int main(int argc, const char * argv[]) {
                 
         }
         
-    }while (selection!=5);
+    }while (selection!=6);
     
     return 0;
 

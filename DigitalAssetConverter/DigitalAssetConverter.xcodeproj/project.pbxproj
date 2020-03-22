@@ -16,6 +16,7 @@
 		032BE010240B46BF00453C99 /* Numerical.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 032BE00A240B46BF00453C99 /* Numerical.cpp */; };
 		032BE013240B46D600453C99 /* lodepng.mm in Sources */ = {isa = PBXBuildFile; fileRef = 032BE011240B46D500453C99 /* lodepng.mm */; };
 		032BE016240B46E300453C99 /* tinyxml2.mm in Sources */ = {isa = PBXBuildFile; fileRef = 032BE014240B46E300453C99 /* tinyxml2.mm */; };
+		03F80B40242260D100D2D7F3 /* ParticleDataConverter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03F80B3E242260D100D2D7F3 /* ParticleDataConverter.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -51,6 +52,8 @@
 		032BE012240B46D600453C99 /* lodepng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lodepng.h; path = PNGLoader/lodepng.h; sourceTree = "<group>"; };
 		032BE014240B46E300453C99 /* tinyxml2.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = tinyxml2.mm; path = XMLParser/tinyxml2.mm; sourceTree = "<group>"; };
 		032BE015240B46E300453C99 /* tinyxml2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tinyxml2.h; path = XMLParser/tinyxml2.h; sourceTree = "<group>"; };
+		03F80B3E242260D100D2D7F3 /* ParticleDataConverter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ParticleDataConverter.cpp; sourceTree = "<group>"; };
+		03F80B3F242260D100D2D7F3 /* ParticleDataConverter.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ParticleDataConverter.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +105,8 @@
 				032BE007240B46BF00453C99 /* MeshDataConverter.hpp */,
 				032BE00A240B46BF00453C99 /* Numerical.cpp */,
 				032BE006240B46BF00453C99 /* Numerical.hpp */,
+				03F80B3E242260D100D2D7F3 /* ParticleDataConverter.cpp */,
+				03F80B3F242260D100D2D7F3 /* ParticleDataConverter.hpp */,
 			);
 			path = DigitalAssetConverter;
 			sourceTree = "<group>";
@@ -169,6 +174,7 @@
 				032BDFF7240B45FF00453C99 /* main.cpp in Sources */,
 				032BE013240B46D600453C99 /* lodepng.mm in Sources */,
 				032BE00D240B46BF00453C99 /* ConvexHullAlgorithm.cpp in Sources */,
+				03F80B40242260D100D2D7F3 /* ParticleDataConverter.cpp in Sources */,
 				032BE00F240B46BF00453C99 /* DataConverter.cpp in Sources */,
 				032BE010240B46BF00453C99 /* Numerical.cpp in Sources */,
 				032BE00E240B46BF00453C99 /* MeshDataConverter.cpp in Sources */,
