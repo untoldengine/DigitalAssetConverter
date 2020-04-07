@@ -90,7 +90,45 @@ typedef struct{
 
 }TEXTURES;
 
-
+typedef struct{
+    
+    std::string name;
+    std::vector<float> positionVariance;
+    float speed=0.0;
+    float speedVariance=0.0;
+    float lifeSpan=0.0;
+    float angle=0.0;
+    float angleVariance=0.0;
+    std::vector<float> gravity;
+    float radialAcceleration=0.0;
+    float tangentialAcceleration=0.0;
+    float radialAccelerationVariance=0.0;
+    float tangentialAccelerationVariance=0.0;
+    std::vector<float> startColor;
+    std::vector<float> startColorVariance;
+    std::vector<float> finishColor;
+    std::vector<float> finishColorVariance;
+    int maxParticles=0;
+    float startParticleSize=0.0;
+    float startParticleSizeVariance=0.0;
+    float finishParticleSize=0.0;
+    float finishParticleSizeVariance=0.0;
+    float duration=0.0;
+    float maxRadius=0.0;
+    float maxRadiusVariance=0.0;
+    float minRadius=0.0;
+    float minRadiusVariance=0.0;
+    float rotatePerSecond=0.0;
+    float rotatePerSecondVariance=0.0;
+    int blendFunctionSource=0;
+    int blendFunctionDestination=0;
+    float rotationStart=0.0;
+    float rotationStartVariance=0.0;
+    float rotationEnd=0.0;
+    float rotationEndVariance=0.0;
+    std::string texture;
+    
+}PARTICLES;
 
 //CONVEX HULL STRUCTURES
 typedef struct CONVEXHULLVERTEXSTRUCT CONVEXVERTEX;
