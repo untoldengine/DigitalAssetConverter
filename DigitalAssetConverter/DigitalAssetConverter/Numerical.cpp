@@ -6,7 +6,7 @@
 //  Copyright © 2020 Untold Engine Studios. All rights reserved.
 //
 
-#include "Numerical.hpp"
+#include "Numerical.h"
 
 Numerical::Numerical(){
     

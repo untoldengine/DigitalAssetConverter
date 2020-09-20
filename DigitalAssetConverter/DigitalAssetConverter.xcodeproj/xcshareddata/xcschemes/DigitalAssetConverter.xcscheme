@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1140"
+   LastUpgradeVersion = "1160"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "032BDFF2240B45FF00453C99"
-               BuildableName = "DigitalAssetConverter"
+               BlueprintIdentifier = "03A96CBD251395AD00E8BA19"
+               BuildableName = "DigitalAssetConverter.app"
                BlueprintName = "DigitalAssetConverter"
                ReferencedContainer = "container:DigitalAssetConverter.xcodeproj">
             </BuildableReference>
@@ -44,8 +44,8 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "032BDFF2240B45FF00453C99"
-            BuildableName = "DigitalAssetConverter"
+            BlueprintIdentifier = "03A96CBD251395AD00E8BA19"
+            BuildableName = "DigitalAssetConverter.app"
             BlueprintName = "DigitalAssetConverter"
             ReferencedContainer = "container:DigitalAssetConverter.xcodeproj">
          </BuildableReference>
@@ -61,8 +61,8 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "032BDFF2240B45FF00453C99"
-            BuildableName = "DigitalAssetConverter"
+            BlueprintIdentifier = "03A96CBD251395AD00E8BA19"
+            BuildableName = "DigitalAssetConverter.app"
             BlueprintName = "DigitalAssetConverter"
             ReferencedContainer = "container:DigitalAssetConverter.xcodeproj">
          </BuildableReference>

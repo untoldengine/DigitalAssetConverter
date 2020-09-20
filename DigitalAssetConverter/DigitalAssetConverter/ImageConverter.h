@@ -58,7 +58,7 @@ public:
      @brief Writes the decode png binary data into a file
      @param filepath Path to the file
      */
-    void writeBinaryToFile(std::string filepath);
+    bool writeBinaryToFile(std::string filepath);
     
     /**
      @brief Reads the decoded png binary data

@@ -6,7 +6,7 @@
 //  Copyright © 2020 Untold Engine Studios. All rights reserved.
 //
 
-#include "ParticleDataConverter.hpp"
+#include "ParticleDataConverter.h"
 
 
 ParticleDataConverter::ParticleDataConverter(){
@@ -480,7 +480,7 @@ void ParticleDataConverter::writeParticleDataToFile(std::ofstream &file){
     
 }
 
-void ParticleDataConverter::writeBinaryToFile(std::string filepath){
+bool ParticleDataConverter::writeBinaryToFile(std::string filepath){
     
     std::ofstream file(filepath, std::ios::out | std::ios::binary );
     
@@ -488,15 +488,15 @@ void ParticleDataConverter::writeBinaryToFile(std::string filepath){
         
         std::cerr<<"File "<<filepath<<"does not exist"<<std::endl;
         
-        exit(1);
+        return false;
         
     }
 
     writeParticleDataToFile(file);
        
-    std::cout<<"Particle's data was converted into binary."<<std::endl;
-    
+    //std::cout<<"Particle's data was converted into binary."<<std::endl;
     file.close();
+    return true;
 }
 
 

@@ -6,8 +6,8 @@
 //  Copyright © 2020 Untold Engine Studios. All rights reserved.
 //
 
-#include "MeshDataConverter.hpp"
-#include "ConvexHullAlgorithm.hpp"
+#include "MeshDataConverter.h"
+#include "ConvexHullAlgorithm.h"
 
 MeshDataConverter::MeshDataConverter(){
     
@@ -766,7 +766,7 @@ void MeshDataConverter::readMeshDataFile(std::ifstream &file, MODEL &uModel){
     
 }
 
-void MeshDataConverter::writeBinaryToFile(std::string filepath){
+bool MeshDataConverter::writeBinaryToFile(std::string filepath){
     
     std::ofstream file(filepath, std::ios::out | std::ios::binary );
     
@@ -774,7 +774,7 @@ void MeshDataConverter::writeBinaryToFile(std::string filepath){
         
         std::cerr<<"File "<<filepath<<"does not exist"<<std::endl;
         
-        exit(1);
+        return false;
         
     }
 
@@ -788,10 +788,9 @@ void MeshDataConverter::writeBinaryToFile(std::string filepath){
         
     }
     
-    std::cout<<"Mesh data was converted into binary."<<std::endl;
-    
     file.close();
     
+    return true;
 }
 
 void MeshDataConverter::readBinaryFile(std::string filepath){

@@ -20,7 +20,7 @@
 #include "CommonProtocols.h"
 #include "tinyxml2.h"
 
-#include "DataConverter.hpp"
+#include "DataConverter.h"
 
 /**
  @brief The MeshDataConverter converts xml data into binary data
@@ -69,7 +69,7 @@ public:
      @brief writes binary data into the file
      @param filepath filepath to file
      */
-    void writeBinaryToFile(std::string filepath);
+    bool writeBinaryToFile(std::string filepath);
     
     /**
      @brief reads binary data from the file
