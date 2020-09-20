@@ -92,7 +92,7 @@ int main(int argc, const char * argv[]) {
                 
                 std::cin>>filename;
 
-                if(meshDataConverter.readXML(inputPathFolder+filename+".xml")){
+                if(meshDataConverter.readXML(inputPathFolder+filename+".xmlscene")){
                     
                     meshDataConverter.writeBinaryToFile(outputPathFolder+filename+".u4d");
                     
@@ -111,7 +111,7 @@ int main(int argc, const char * argv[]) {
                 
                 std::cin>>filename;
 
-                if (animDataConverter.readXML(inputPathFolder+filename+".xml")) {
+                if (animDataConverter.readXML(inputPathFolder+filename+".xmlanim")) {
                     
                     animDataConverter.writeBinaryToFile(outputPathFolder+filename+".u4d");
 
