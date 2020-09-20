@@ -86,7 +86,7 @@ public:
      @brief writes binary data into the file
      @param filepath file to write data
      */
-    virtual void writeBinaryToFile(std::string filepath){};
+    virtual bool writeBinaryToFile(std::string filepath){};
     
     /**
      @brief reads the binary file

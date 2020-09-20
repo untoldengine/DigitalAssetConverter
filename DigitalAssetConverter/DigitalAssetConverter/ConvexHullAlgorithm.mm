@@ -6,9 +6,9 @@
 //  Copyright © 2020 Untold Engine Studios. All rights reserved.
 //
 
-#include "ConvexHullAlgorithm.hpp"
+#include "ConvexHullAlgorithm.h"
 #include <stdlib.h>
-#include "Numerical.hpp"
+#include "Numerical.h"
 #include "Constants.h"
 
 ConvexHullAlgorithm::ConvexHullAlgorithm(){

@@ -6,7 +6,7 @@
 //  Copyright © 2020 Untold Engine Studios. All rights reserved.
 //
 
-#include "ImageConverter.hpp"
+#include "ImageConverter.h"
 #include <experimental/filesystem>
 
 namespace fs=std::experimental::filesystem;
@@ -133,7 +133,7 @@ void ImageConverter::writeImageDataToFile(std::ofstream &file, TEXTURES &uTextur
     
 }
 
-void ImageConverter::writeBinaryToFile(std::string filepath){
+bool ImageConverter::writeBinaryToFile(std::string filepath){
     
     std::ofstream file(filepath, std::ios::out | std::ios::binary );
     
@@ -141,7 +141,7 @@ void ImageConverter::writeBinaryToFile(std::string filepath){
         
         std::cerr<<"File "<<filepath<<"does not exist"<<std::endl;
         
-        exit(1);
+        return false;
         
     }
 
@@ -155,9 +155,9 @@ void ImageConverter::writeBinaryToFile(std::string filepath){
         
     }
     
-    std::cout<<"Texture data was converted into binary."<<std::endl;
-    
+    //std::cout<<"Texture data was converted into binary."<<std::endl;
     file.close();
+    return true;
     
 }
 

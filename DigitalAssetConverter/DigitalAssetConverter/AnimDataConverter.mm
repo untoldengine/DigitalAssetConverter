@@ -6,7 +6,7 @@
 //  Copyright © 2020 Untold Engine Studios. All rights reserved.
 //
 
-#include "AnimDataConverter.hpp"
+#include "AnimDataConverter.h"
 
 AnimDataConverter::AnimDataConverter(){
     
@@ -122,7 +122,7 @@ void AnimDataConverter::readBinaryFile(std::string filepath){
     
 }
 
-void AnimDataConverter::writeBinaryToFile(std::string filepath){
+bool AnimDataConverter::writeBinaryToFile(std::string filepath){
     
     std::ofstream file(filepath, std::ios::out | std::ios::binary );
     
@@ -130,16 +130,16 @@ void AnimDataConverter::writeBinaryToFile(std::string filepath){
         
         std::cerr<<"File "<<filepath<<"does not exist"<<std::endl;
         
-        exit(1);
+        return false;
         
     }
 
     writeAnimDataToFile(file);
        
-    std::cout<<"Animation data was converted into binary."<<std::endl;
+    //std::cout<<"Animation data was converted into binary."<<std::endl;
     
     file.close();
-    
+    return true;
 }
 
 void AnimDataConverter::writeAnimDataToFile(std::ofstream &file){

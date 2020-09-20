@@ -7,57 +7,57 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		032BDFF7240B45FF00453C99 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 032BDFF6240B45FF00453C99 /* main.cpp */; };
-		032BE00B240B46BF00453C99 /* ImageConverter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 032BE001240B46BE00453C99 /* ImageConverter.cpp */; };
-		032BE00C240B46BF00453C99 /* AnimDataConverter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 032BE002240B46BE00453C99 /* AnimDataConverter.cpp */; };
-		032BE00D240B46BF00453C99 /* ConvexHullAlgorithm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 032BE004240B46BE00453C99 /* ConvexHullAlgorithm.cpp */; };
-		032BE00E240B46BF00453C99 /* MeshDataConverter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 032BE008240B46BF00453C99 /* MeshDataConverter.cpp */; };
-		032BE00F240B46BF00453C99 /* DataConverter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 032BE009240B46BF00453C99 /* DataConverter.cpp */; };
-		032BE010240B46BF00453C99 /* Numerical.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 032BE00A240B46BF00453C99 /* Numerical.cpp */; };
-		032BE013240B46D600453C99 /* lodepng.mm in Sources */ = {isa = PBXBuildFile; fileRef = 032BE011240B46D500453C99 /* lodepng.mm */; };
-		032BE016240B46E300453C99 /* tinyxml2.mm in Sources */ = {isa = PBXBuildFile; fileRef = 032BE014240B46E300453C99 /* tinyxml2.mm */; };
-		03F80B40242260D100D2D7F3 /* ParticleDataConverter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03F80B3E242260D100D2D7F3 /* ParticleDataConverter.cpp */; };
+		03A96CC3251395AD00E8BA19 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 03A96CC2251395AD00E8BA19 /* AppDelegate.mm */; };
+		03A96CC6251395AD00E8BA19 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 03A96CC5251395AD00E8BA19 /* ViewController.mm */; };
+		03A96CC8251395B100E8BA19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03A96CC7251395B100E8BA19 /* Assets.xcassets */; };
+		03A96CCB251395B100E8BA19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03A96CC9251395B100E8BA19 /* Main.storyboard */; };
+		03A96CCE251395B100E8BA19 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A96CCD251395B100E8BA19 /* main.m */; };
+		03A96CD725139D3700E8BA19 /* AnimDataConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 03A96CD625139D3700E8BA19 /* AnimDataConverter.mm */; };
+		03A96CDE25139D4300E8BA19 /* ConvexHullAlgorithm.mm in Sources */ = {isa = PBXBuildFile; fileRef = 03A96CD925139D4200E8BA19 /* ConvexHullAlgorithm.mm */; };
+		03A96CDF25139D4300E8BA19 /* DataConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 03A96CDA25139D4200E8BA19 /* DataConverter.mm */; };
+		03A96CE225139D4900E8BA19 /* ImageConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 03A96CE025139D4900E8BA19 /* ImageConverter.mm */; };
+		03A96CED25139D5500E8BA19 /* MeshDataConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 03A96CE425139D5500E8BA19 /* MeshDataConverter.mm */; };
+		03A96CEE25139D5500E8BA19 /* lodepng.mm in Sources */ = {isa = PBXBuildFile; fileRef = 03A96CE725139D5500E8BA19 /* lodepng.mm */; };
+		03A96CEF25139D5500E8BA19 /* Numerical.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03A96CEA25139D5500E8BA19 /* Numerical.cpp */; };
+		03A96CF325139D5D00E8BA19 /* tinyxml2.mm in Sources */ = {isa = PBXBuildFile; fileRef = 03A96CF125139D5D00E8BA19 /* tinyxml2.mm */; };
+		03A96CF625139E2300E8BA19 /* ParticleDataConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 03A96CF425139E2200E8BA19 /* ParticleDataConverter.mm */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		032BDFF1240B45FF00453C99 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		032BDFF3240B45FF00453C99 /* DigitalAssetConverter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DigitalAssetConverter; sourceTree = BUILT_PRODUCTS_DIR; };
-		032BDFF6240B45FF00453C99 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		032BDFFD240B46BE00453C99 /* ConvexHullAlgorithm.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ConvexHullAlgorithm.hpp; sourceTree = "<group>"; };
-		032BDFFE240B46BE00453C99 /* AnimDataConverter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AnimDataConverter.hpp; sourceTree = "<group>"; };
-		032BDFFF240B46BE00453C99 /* CommonProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonProtocols.h; sourceTree = "<group>"; };
-		032BE000240B46BE00453C99 /* ImageConverter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ImageConverter.hpp; sourceTree = "<group>"; };
-		032BE001240B46BE00453C99 /* ImageConverter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImageConverter.cpp; sourceTree = "<group>"; };
-		032BE002240B46BE00453C99 /* AnimDataConverter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AnimDataConverter.cpp; sourceTree = "<group>"; };
-		032BE003240B46BE00453C99 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
-		032BE004240B46BE00453C99 /* ConvexHullAlgorithm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConvexHullAlgorithm.cpp; sourceTree = "<group>"; };
-		032BE005240B46BF00453C99 /* DataConverter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DataConverter.hpp; sourceTree = "<group>"; };
-		032BE006240B46BF00453C99 /* Numerical.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Numerical.hpp; sourceTree = "<group>"; };
-		032BE007240B46BF00453C99 /* MeshDataConverter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MeshDataConverter.hpp; sourceTree = "<group>"; };
-		032BE008240B46BF00453C99 /* MeshDataConverter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MeshDataConverter.cpp; sourceTree = "<group>"; };
-		032BE009240B46BF00453C99 /* DataConverter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DataConverter.cpp; sourceTree = "<group>"; };
-		032BE00A240B46BF00453C99 /* Numerical.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Numerical.cpp; sourceTree = "<group>"; };
-		032BE011240B46D500453C99 /* lodepng.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = lodepng.mm; path = PNGLoader/lodepng.mm; sourceTree = "<group>"; };
-		032BE012240B46D600453C99 /* lodepng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lodepng.h; path = PNGLoader/lodepng.h; sourceTree = "<group>"; };
-		032BE014240B46E300453C99 /* tinyxml2.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = tinyxml2.mm; path = XMLParser/tinyxml2.mm; sourceTree = "<group>"; };
-		032BE015240B46E300453C99 /* tinyxml2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tinyxml2.h; path = XMLParser/tinyxml2.h; sourceTree = "<group>"; };
-		03F80B3E242260D100D2D7F3 /* ParticleDataConverter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ParticleDataConverter.cpp; sourceTree = "<group>"; };
-		03F80B3F242260D100D2D7F3 /* ParticleDataConverter.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ParticleDataConverter.hpp; sourceTree = "<group>"; };
+		03A96CBE251395AD00E8BA19 /* DigitalAssetConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigitalAssetConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		03A96CC1251395AD00E8BA19 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		03A96CC2251395AD00E8BA19 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		03A96CC4251395AD00E8BA19 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		03A96CC5251395AD00E8BA19 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		03A96CC7251395B100E8BA19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		03A96CCA251395B100E8BA19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		03A96CCC251395B100E8BA19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03A96CCD251395B100E8BA19 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		03A96CCF251395B100E8BA19 /* DigitalAssetConverter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DigitalAssetConverter.entitlements; sourceTree = "<group>"; };
+		03A96CD525139D3700E8BA19 /* AnimDataConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimDataConverter.h; sourceTree = "<group>"; };
+		03A96CD625139D3700E8BA19 /* AnimDataConverter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AnimDataConverter.mm; sourceTree = "<group>"; };
+		03A96CD825139D4200E8BA19 /* CommonProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonProtocols.h; sourceTree = "<group>"; };
+		03A96CD925139D4200E8BA19 /* ConvexHullAlgorithm.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ConvexHullAlgorithm.mm; sourceTree = "<group>"; };
+		03A96CDA25139D4200E8BA19 /* DataConverter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DataConverter.mm; sourceTree = "<group>"; };
+		03A96CDB25139D4200E8BA19 /* ConvexHullAlgorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConvexHullAlgorithm.h; sourceTree = "<group>"; };
+		03A96CDC25139D4300E8BA19 /* DataConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataConverter.h; sourceTree = "<group>"; };
+		03A96CDD25139D4300E8BA19 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		03A96CE025139D4900E8BA19 /* ImageConverter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ImageConverter.mm; sourceTree = "<group>"; };
+		03A96CE125139D4900E8BA19 /* ImageConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageConverter.h; sourceTree = "<group>"; };
+		03A96CE425139D5500E8BA19 /* MeshDataConverter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MeshDataConverter.mm; sourceTree = "<group>"; };
+		03A96CE625139D5500E8BA19 /* lodepng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lodepng.h; sourceTree = "<group>"; };
+		03A96CE725139D5500E8BA19 /* lodepng.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = lodepng.mm; sourceTree = "<group>"; };
+		03A96CE825139D5500E8BA19 /* MeshDataConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeshDataConverter.h; sourceTree = "<group>"; };
+		03A96CE925139D5500E8BA19 /* Numerical.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Numerical.h; sourceTree = "<group>"; };
+		03A96CEA25139D5500E8BA19 /* Numerical.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Numerical.cpp; sourceTree = "<group>"; };
+		03A96CF125139D5D00E8BA19 /* tinyxml2.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = tinyxml2.mm; sourceTree = "<group>"; };
+		03A96CF225139D5D00E8BA19 /* tinyxml2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tinyxml2.h; sourceTree = "<group>"; };
+		03A96CF425139E2200E8BA19 /* ParticleDataConverter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ParticleDataConverter.mm; sourceTree = "<group>"; };
+		03A96CF525139E2200E8BA19 /* ParticleDataConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParticleDataConverter.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		032BDFF0240B45FF00453C99 /* Frameworks */ = {
+		03A96CBB251395AD00E8BA19 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -67,60 +67,84 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		032BDFEA240B45FF00453C99 = {
+		03A96CB5251395AD00E8BA19 = {
 			isa = PBXGroup;
 			children = (
-				032BDFF5240B45FF00453C99 /* DigitalAssetConverter */,
-				032BDFF4240B45FF00453C99 /* Products */,
+				03A96CC0251395AD00E8BA19 /* DigitalAssetConverter */,
+				03A96CBF251395AD00E8BA19 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		032BDFF4240B45FF00453C99 /* Products */ = {
+		03A96CBF251395AD00E8BA19 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				032BDFF3240B45FF00453C99 /* DigitalAssetConverter */,
+				03A96CBE251395AD00E8BA19 /* DigitalAssetConverter.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		032BDFF5240B45FF00453C99 /* DigitalAssetConverter */ = {
+		03A96CC0251395AD00E8BA19 /* DigitalAssetConverter */ = {
 			isa = PBXGroup;
 			children = (
-				032BDFF6240B45FF00453C99 /* main.cpp */,
-				032BE012240B46D600453C99 /* lodepng.h */,
-				032BE011240B46D500453C99 /* lodepng.mm */,
-				032BE015240B46E300453C99 /* tinyxml2.h */,
-				032BE014240B46E300453C99 /* tinyxml2.mm */,
-				032BE002240B46BE00453C99 /* AnimDataConverter.cpp */,
-				032BDFFE240B46BE00453C99 /* AnimDataConverter.hpp */,
-				032BDFFF240B46BE00453C99 /* CommonProtocols.h */,
-				032BE003240B46BE00453C99 /* Constants.h */,
-				032BE004240B46BE00453C99 /* ConvexHullAlgorithm.cpp */,
-				032BDFFD240B46BE00453C99 /* ConvexHullAlgorithm.hpp */,
-				032BE009240B46BF00453C99 /* DataConverter.cpp */,
-				032BE005240B46BF00453C99 /* DataConverter.hpp */,
-				032BE001240B46BE00453C99 /* ImageConverter.cpp */,
-				032BE000240B46BE00453C99 /* ImageConverter.hpp */,
-				032BE008240B46BF00453C99 /* MeshDataConverter.cpp */,
-				032BE007240B46BF00453C99 /* MeshDataConverter.hpp */,
-				032BE00A240B46BF00453C99 /* Numerical.cpp */,
-				032BE006240B46BF00453C99 /* Numerical.hpp */,
-				03F80B3E242260D100D2D7F3 /* ParticleDataConverter.cpp */,
-				03F80B3F242260D100D2D7F3 /* ParticleDataConverter.hpp */,
+				03A96CE425139D5500E8BA19 /* MeshDataConverter.mm */,
+				03A96CE825139D5500E8BA19 /* MeshDataConverter.h */,
+				03A96CF525139E2200E8BA19 /* ParticleDataConverter.h */,
+				03A96CF425139E2200E8BA19 /* ParticleDataConverter.mm */,
+				03A96CEA25139D5500E8BA19 /* Numerical.cpp */,
+				03A96CE925139D5500E8BA19 /* Numerical.h */,
+				03A96CF025139D5D00E8BA19 /* XMLParser */,
+				03A96CE525139D5500E8BA19 /* PNGLoader */,
+				03A96CE025139D4900E8BA19 /* ImageConverter.mm */,
+				03A96CE125139D4900E8BA19 /* ImageConverter.h */,
+				03A96CD825139D4200E8BA19 /* CommonProtocols.h */,
+				03A96CDD25139D4300E8BA19 /* Constants.h */,
+				03A96CD925139D4200E8BA19 /* ConvexHullAlgorithm.mm */,
+				03A96CDB25139D4200E8BA19 /* ConvexHullAlgorithm.h */,
+				03A96CDA25139D4200E8BA19 /* DataConverter.mm */,
+				03A96CDC25139D4300E8BA19 /* DataConverter.h */,
+				03A96CD625139D3700E8BA19 /* AnimDataConverter.mm */,
+				03A96CD525139D3700E8BA19 /* AnimDataConverter.h */,
+				03A96CC1251395AD00E8BA19 /* AppDelegate.h */,
+				03A96CC2251395AD00E8BA19 /* AppDelegate.mm */,
+				03A96CC4251395AD00E8BA19 /* ViewController.h */,
+				03A96CC5251395AD00E8BA19 /* ViewController.mm */,
+				03A96CC7251395B100E8BA19 /* Assets.xcassets */,
+				03A96CC9251395B100E8BA19 /* Main.storyboard */,
+				03A96CCC251395B100E8BA19 /* Info.plist */,
+				03A96CCD251395B100E8BA19 /* main.m */,
+				03A96CCF251395B100E8BA19 /* DigitalAssetConverter.entitlements */,
 			);
 			path = DigitalAssetConverter;
+			sourceTree = "<group>";
+		};
+		03A96CE525139D5500E8BA19 /* PNGLoader */ = {
+			isa = PBXGroup;
+			children = (
+				03A96CE625139D5500E8BA19 /* lodepng.h */,
+				03A96CE725139D5500E8BA19 /* lodepng.mm */,
+			);
+			path = PNGLoader;
+			sourceTree = "<group>";
+		};
+		03A96CF025139D5D00E8BA19 /* XMLParser */ = {
+			isa = PBXGroup;
+			children = (
+				03A96CF125139D5D00E8BA19 /* tinyxml2.mm */,
+				03A96CF225139D5D00E8BA19 /* tinyxml2.h */,
+			);
+			path = XMLParser;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		032BDFF2240B45FF00453C99 /* DigitalAssetConverter */ = {
+		03A96CBD251395AD00E8BA19 /* DigitalAssetConverter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 032BDFFA240B45FF00453C99 /* Build configuration list for PBXNativeTarget "DigitalAssetConverter" */;
+			buildConfigurationList = 03A96CD2251395B100E8BA19 /* Build configuration list for PBXNativeTarget "DigitalAssetConverter" */;
 			buildPhases = (
-				032BDFEF240B45FF00453C99 /* Sources */,
-				032BDFF0240B45FF00453C99 /* Frameworks */,
-				032BDFF1240B45FF00453C99 /* CopyFiles */,
+				03A96CBA251395AD00E8BA19 /* Sources */,
+				03A96CBB251395AD00E8BA19 /* Frameworks */,
+				03A96CBC251395AD00E8BA19 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -128,24 +152,24 @@
 			);
 			name = DigitalAssetConverter;
 			productName = DigitalAssetConverter;
-			productReference = 032BDFF3240B45FF00453C99 /* DigitalAssetConverter */;
-			productType = "com.apple.product-type.tool";
+			productReference = 03A96CBE251395AD00E8BA19 /* DigitalAssetConverter.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		032BDFEB240B45FF00453C99 /* Project object */ = {
+		03A96CB6251395AD00E8BA19 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1160;
 				ORGANIZATIONNAME = "Untold Engine Studios";
 				TargetAttributes = {
-					032BDFF2240B45FF00453C99 = {
-						CreatedOnToolsVersion = 11.3.1;
+					03A96CBD251395AD00E8BA19 = {
+						CreatedOnToolsVersion = 11.6;
 					};
 				};
 			};
-			buildConfigurationList = 032BDFEE240B45FF00453C99 /* Build configuration list for PBXProject "DigitalAssetConverter" */;
+			buildConfigurationList = 03A96CB9251395AD00E8BA19 /* Build configuration list for PBXProject "DigitalAssetConverter" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -153,38 +177,63 @@
 				en,
 				Base,
 			);
-			mainGroup = 032BDFEA240B45FF00453C99;
-			productRefGroup = 032BDFF4240B45FF00453C99 /* Products */;
+			mainGroup = 03A96CB5251395AD00E8BA19;
+			productRefGroup = 03A96CBF251395AD00E8BA19 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				032BDFF2240B45FF00453C99 /* DigitalAssetConverter */,
+				03A96CBD251395AD00E8BA19 /* DigitalAssetConverter */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		03A96CBC251395AD00E8BA19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03A96CC8251395B100E8BA19 /* Assets.xcassets in Resources */,
+				03A96CCB251395B100E8BA19 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		032BDFEF240B45FF00453C99 /* Sources */ = {
+		03A96CBA251395AD00E8BA19 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				032BE00C240B46BF00453C99 /* AnimDataConverter.cpp in Sources */,
-				032BE016240B46E300453C99 /* tinyxml2.mm in Sources */,
-				032BE00B240B46BF00453C99 /* ImageConverter.cpp in Sources */,
-				032BDFF7240B45FF00453C99 /* main.cpp in Sources */,
-				032BE013240B46D600453C99 /* lodepng.mm in Sources */,
-				032BE00D240B46BF00453C99 /* ConvexHullAlgorithm.cpp in Sources */,
-				03F80B40242260D100D2D7F3 /* ParticleDataConverter.cpp in Sources */,
-				032BE00F240B46BF00453C99 /* DataConverter.cpp in Sources */,
-				032BE010240B46BF00453C99 /* Numerical.cpp in Sources */,
-				032BE00E240B46BF00453C99 /* MeshDataConverter.cpp in Sources */,
+				03A96CE225139D4900E8BA19 /* ImageConverter.mm in Sources */,
+				03A96CED25139D5500E8BA19 /* MeshDataConverter.mm in Sources */,
+				03A96CEE25139D5500E8BA19 /* lodepng.mm in Sources */,
+				03A96CC6251395AD00E8BA19 /* ViewController.mm in Sources */,
+				03A96CDE25139D4300E8BA19 /* ConvexHullAlgorithm.mm in Sources */,
+				03A96CEF25139D5500E8BA19 /* Numerical.cpp in Sources */,
+				03A96CD725139D3700E8BA19 /* AnimDataConverter.mm in Sources */,
+				03A96CCE251395B100E8BA19 /* main.m in Sources */,
+				03A96CDF25139D4300E8BA19 /* DataConverter.mm in Sources */,
+				03A96CF325139D5D00E8BA19 /* tinyxml2.mm in Sources */,
+				03A96CF625139E2300E8BA19 /* ParticleDataConverter.mm in Sources */,
+				03A96CC3251395AD00E8BA19 /* AppDelegate.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		03A96CC9251395B100E8BA19 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03A96CCA251395B100E8BA19 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
-		032BDFF8240B45FF00453C99 /* Debug */ = {
+		03A96CD0251395B100E8BA19 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -242,7 +291,7 @@
 			};
 			name = Debug;
 		};
-		032BDFF9240B45FF00453C99 /* Release */ = {
+		03A96CD1251395B100E8BA19 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -293,22 +342,42 @@
 			};
 			name = Release;
 		};
-		032BDFFB240B45FF00453C99 /* Debug */ = {
+		03A96CD3251395B100E8BA19 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DigitalAssetConverter/DigitalAssetConverter.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = W9GCJ3HCHT;
 				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				INFOPLIST_FILE = DigitalAssetConverter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.untoldengine.DigitalAssetConverter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		032BDFFC240B45FF00453C99 /* Release */ = {
+		03A96CD4251395B100E8BA19 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DigitalAssetConverter/DigitalAssetConverter.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = W9GCJ3HCHT;
 				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				INFOPLIST_FILE = DigitalAssetConverter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.untoldengine.DigitalAssetConverter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -316,25 +385,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		032BDFEE240B45FF00453C99 /* Build configuration list for PBXProject "DigitalAssetConverter" */ = {
+		03A96CB9251395AD00E8BA19 /* Build configuration list for PBXProject "DigitalAssetConverter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				032BDFF8240B45FF00453C99 /* Debug */,
-				032BDFF9240B45FF00453C99 /* Release */,
+				03A96CD0251395B100E8BA19 /* Debug */,
+				03A96CD1251395B100E8BA19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		032BDFFA240B45FF00453C99 /* Build configuration list for PBXNativeTarget "DigitalAssetConverter" */ = {
+		03A96CD2251395B100E8BA19 /* Build configuration list for PBXNativeTarget "DigitalAssetConverter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				032BDFFB240B45FF00453C99 /* Debug */,
-				032BDFFC240B45FF00453C99 /* Release */,
+				03A96CD3251395B100E8BA19 /* Debug */,
+				03A96CD4251395B100E8BA19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 032BDFEB240B45FF00453C99 /* Project object */;
+	rootObject = 03A96CB6251395AD00E8BA19 /* Project object */;
 }

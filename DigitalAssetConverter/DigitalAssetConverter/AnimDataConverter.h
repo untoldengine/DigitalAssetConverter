@@ -10,7 +10,7 @@
 #define AnimDataConverter_hpp
 
 #include <stdio.h>
-#include "DataConverter.hpp"
+#include "DataConverter.h"
 #include <fstream> //for file i/o
 #include <iomanip>
 #include <cstdlib>
@@ -59,7 +59,7 @@ public:
      @brief Writes binary data into the file
      @param filepath filepath to the file
      */
-    void writeBinaryToFile(std::string filepath);
+    bool writeBinaryToFile(std::string filepath);
     
     /**
      @brief Reads the binary data from the file
