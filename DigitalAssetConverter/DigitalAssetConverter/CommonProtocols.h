@@ -130,6 +130,67 @@ typedef struct{
     
 }PARTICLES;
 
+typedef struct{
+    
+    /**
+     @brief Font character ID
+     */
+    int ID;
+    
+    /**
+     @brief Font character x-coordinate position
+     */
+    float x;
+    
+    /**
+     @brief Font character y-coordinate position
+     */
+    float y;
+    
+    /**
+     @brief Font character width
+     */
+    float width;
+    
+    /**
+     @brief Font character height
+     */
+    float height;
+    
+    /**
+     @brief Font character x-offset position
+     */
+    float xoffset;
+    
+    /**
+     @brief Font character y-offset position
+     */
+    float yoffset;
+    
+    /**
+     @brief Font character x-advance
+     */
+    float xadvance;
+    
+    /**
+     @brief Font character letter name
+     */
+     std::string letter;
+    
+}FONTDATA;
+
+typedef struct{
+    
+    std::string name;
+    int fontSize;
+    float fontAtlasWidth;
+    float fontAtlasHeight;
+    std::string texture;
+    int charCount;
+    std::vector<FONTDATA> fontData;
+    
+}FONTS;
+
 //CONVEX HULL STRUCTURES
 typedef struct CONVEXHULLVERTEXSTRUCT CONVEXVERTEX;
 typedef CONVEXVERTEX *CONVEXHULLVERTEX;

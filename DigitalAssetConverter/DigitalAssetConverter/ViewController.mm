@@ -14,6 +14,7 @@
 #include "AnimDataConverter.h"
 #include "ImageConverter.h"
 #include "ParticleDataConverter.h"
+#include "FontDataConverter.h"
 #include <fstream>
 @implementation ViewController
 
@@ -173,6 +174,22 @@
            
        }
         
+    }else if ([self->exportTypeBox indexOfSelectedItem]==4 && filename.empty()==false){
+        
+      FontDataConverter fontConverter;
+       
+       if (fontConverter.readXML(assetPath+filename+".fnt")) {
+           
+           if(fontConverter.writeBinaryToFile(exportPath+filename+".u4d")){
+               
+               conversionSuccessful=true;
+               
+               outputWindow.stringValue=[NSString stringWithFormat:@"Font data, %@, was converted successfully",filenameString];
+               
+           }
+           
+       }
+        
     }
     
     if (conversionSuccessful==false) {
@@ -254,6 +271,8 @@
     NSArray *animFiles=[self->assetFiles filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"self ENDSWITH '.xmlanim'"]];
     NSArray *pngFiles=[self->assetFiles filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"self ENDSWITH '.png'"]];
     NSArray *particleFiles=[self->assetFiles filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"self ENDSWITH '.pex'"]];
+    NSArray *fontFiles=[self->assetFiles filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"self ENDSWITH '.fnt'"]];
+    
     
     [self->textureNameField setHidden:true];
     [self->textureInstruction setHidden:true];
@@ -277,6 +296,10 @@
     }else if ([self->exportTypeBox indexOfSelectedItem]==3){
         
         self.filenamesContainer=particleFiles;
+        
+    }else if ([self->exportTypeBox indexOfSelectedItem]==4){
+        
+        self.filenamesContainer=fontFiles;
         
     }
     

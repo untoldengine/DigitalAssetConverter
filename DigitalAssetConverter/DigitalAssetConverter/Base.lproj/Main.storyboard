@@ -752,6 +752,7 @@
                                         <string>Animation</string>
                                         <string>Image</string>
                                         <string>Particles</string>
+                                        <string>Fonts</string>
                                     </objectValues>
                                 </comboBoxCell>
                                 <connections>

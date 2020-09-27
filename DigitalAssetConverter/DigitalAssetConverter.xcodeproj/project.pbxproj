@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0397E4D0251F8C940020EBD9 /* FontDataConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0397E4CE251F8C940020EBD9 /* FontDataConverter.mm */; };
 		03A96CC3251395AD00E8BA19 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 03A96CC2251395AD00E8BA19 /* AppDelegate.mm */; };
 		03A96CC6251395AD00E8BA19 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 03A96CC5251395AD00E8BA19 /* ViewController.mm */; };
 		03A96CC8251395B100E8BA19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03A96CC7251395B100E8BA19 /* Assets.xcassets */; };
@@ -24,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0397E4CE251F8C940020EBD9 /* FontDataConverter.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = FontDataConverter.mm; sourceTree = "<group>"; };
+		0397E4CF251F8C940020EBD9 /* FontDataConverter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FontDataConverter.h; sourceTree = "<group>"; };
 		03A96CBE251395AD00E8BA19 /* DigitalAssetConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigitalAssetConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03A96CC1251395AD00E8BA19 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		03A96CC2251395AD00E8BA19 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
@@ -86,8 +89,10 @@
 		03A96CC0251395AD00E8BA19 /* DigitalAssetConverter */ = {
 			isa = PBXGroup;
 			children = (
-				03A96CE425139D5500E8BA19 /* MeshDataConverter.mm */,
 				03A96CE825139D5500E8BA19 /* MeshDataConverter.h */,
+				03A96CE425139D5500E8BA19 /* MeshDataConverter.mm */,
+				0397E4CF251F8C940020EBD9 /* FontDataConverter.h */,
+				0397E4CE251F8C940020EBD9 /* FontDataConverter.mm */,
 				03A96CF525139E2200E8BA19 /* ParticleDataConverter.h */,
 				03A96CF425139E2200E8BA19 /* ParticleDataConverter.mm */,
 				03A96CEA25139D5500E8BA19 /* Numerical.cpp */,
@@ -207,6 +212,7 @@
 				03A96CE225139D4900E8BA19 /* ImageConverter.mm in Sources */,
 				03A96CED25139D5500E8BA19 /* MeshDataConverter.mm in Sources */,
 				03A96CEE25139D5500E8BA19 /* lodepng.mm in Sources */,
+				0397E4D0251F8C940020EBD9 /* FontDataConverter.mm in Sources */,
 				03A96CC6251395AD00E8BA19 /* ViewController.mm in Sources */,
 				03A96CDE25139D4300E8BA19 /* ConvexHullAlgorithm.mm in Sources */,
 				03A96CEF25139D5500E8BA19 /* Numerical.cpp in Sources */,
