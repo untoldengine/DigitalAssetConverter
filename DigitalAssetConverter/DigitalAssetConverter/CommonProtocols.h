@@ -177,7 +177,7 @@ typedef struct{
      */
      std::string letter;
     
-}FONTDATA;
+}CHARACTERDATA;
 
 typedef struct{
     
@@ -187,9 +187,9 @@ typedef struct{
     float fontAtlasHeight;
     std::string texture;
     int charCount;
-    std::vector<FONTDATA> fontData;
+    std::vector<CHARACTERDATA> characterData;
     
-}FONTS;
+}FONTDATA;
 
 //CONVEX HULL STRUCTURES
 typedef struct CONVEXHULLVERTEXSTRUCT CONVEXVERTEX;

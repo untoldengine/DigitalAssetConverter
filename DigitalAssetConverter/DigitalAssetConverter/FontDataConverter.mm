@@ -58,8 +58,8 @@ void FontDataConverter::parseXML(){
     for(tinyxml2::XMLElement* subElem = elem->FirstChildElement("char"); subElem != NULL; subElem = subElem->NextSiblingElement("char"))
     {
         
-        //set up the fontData
-        FONTDATA ufontData;
+        //set up the characterData
+        CHARACTERDATA ufontData;
         
         const char* ID = subElem->Attribute("id");
         ufontData.ID=atoi(ID);
@@ -108,7 +108,7 @@ void FontDataConverter::parseXML(){
         }
         
         
-        fonts.fontData.push_back(ufontData);
+        fonts.characterData.push_back(ufontData);
     }
     
 
@@ -151,48 +151,48 @@ void FontDataConverter::writeFontDataToFile(std::ofstream &file){
     for (int i=0;i<numberOfCharSize;i++) {
         
         //id
-        int fontIDLen=(int)fonts.fontData.at(i).ID;
+        int fontIDLen=(int)fonts.characterData.at(i).ID;
         file.write((char*)&fontIDLen,sizeof(fontIDLen));
-        file.write((char*)&fonts.fontData.at(i).ID,sizeof(fontIDLen));
+        file.write((char*)&fonts.characterData.at(i).ID,sizeof(fontIDLen));
         
         //x-position
-        float fontXPosLen=(float)fonts.fontData.at(i).x;
+        float fontXPosLen=(float)fonts.characterData.at(i).x;
         file.write((char*)&fontXPosLen,sizeof(fontXPosLen));
-        file.write((char*)&fonts.fontData.at(i).x,sizeof(fontXPosLen));
+        file.write((char*)&fonts.characterData.at(i).x,sizeof(fontXPosLen));
         
         //y-position
-        float fontYPosLen=(float)fonts.fontData.at(i).y;
+        float fontYPosLen=(float)fonts.characterData.at(i).y;
         file.write((char*)&fontYPosLen,sizeof(fontYPosLen));
-        file.write((char*)&fonts.fontData.at(i).y,sizeof(fontYPosLen));
+        file.write((char*)&fonts.characterData.at(i).y,sizeof(fontYPosLen));
 
         //width
-        float fontWidthLen=(float)fonts.fontData.at(i).width;
+        float fontWidthLen=(float)fonts.characterData.at(i).width;
         file.write((char*)&fontWidthLen,sizeof(fontWidthLen));
-        file.write((char*)&fonts.fontData.at(i).width,sizeof(fontWidthLen));
+        file.write((char*)&fonts.characterData.at(i).width,sizeof(fontWidthLen));
 
         //height
-        float fontHeightLen=(float)fonts.fontData.at(i).height;
+        float fontHeightLen=(float)fonts.characterData.at(i).height;
         file.write((char*)&fontHeightLen,sizeof(fontHeightLen));
-        file.write((char*)&fonts.fontData.at(i).height,sizeof(fontHeightLen));
+        file.write((char*)&fonts.characterData.at(i).height,sizeof(fontHeightLen));
 
         //x-offset
-        float fontXOffsetLen=(float)fonts.fontData.at(i).xoffset;
+        float fontXOffsetLen=(float)fonts.characterData.at(i).xoffset;
         file.write((char*)&fontXOffsetLen,sizeof(fontXOffsetLen));
-        file.write((char*)&fonts.fontData.at(i).xoffset,sizeof(fontXOffsetLen));
+        file.write((char*)&fonts.characterData.at(i).xoffset,sizeof(fontXOffsetLen));
 
         //y-offset
-        float fontYOffsetLen=(float)fonts.fontData.at(i).yoffset;
+        float fontYOffsetLen=(float)fonts.characterData.at(i).yoffset;
         file.write((char*)&fontYOffsetLen,sizeof(fontYOffsetLen));
-        file.write((char*)&fonts.fontData.at(i).yoffset,sizeof(fontYOffsetLen));
+        file.write((char*)&fonts.characterData.at(i).yoffset,sizeof(fontYOffsetLen));
 
         //x advance
-        float fontXAdvanceLen=(float)fonts.fontData.at(i).xadvance;
+        float fontXAdvanceLen=(float)fonts.characterData.at(i).xadvance;
         file.write((char*)&fontXAdvanceLen,sizeof(fontXAdvanceLen));
-        file.write((char*)&fonts.fontData.at(i).xadvance,sizeof(fontXAdvanceLen));
+        file.write((char*)&fonts.characterData.at(i).xadvance,sizeof(fontXAdvanceLen));
         
-        size_t letterLen=fonts.fontData.at(i).letter.size();
+        size_t letterLen=fonts.characterData.at(i).letter.size();
         file.write((char*)&letterLen,sizeof(letterLen));
-        file.write((char*)&fonts.fontData.at(i).letter[0],letterLen);
+        file.write((char*)&fonts.characterData.at(i).letter[0],letterLen);
     }
     
 }
@@ -231,7 +231,7 @@ void FontDataConverter::readBinaryFile(std::string filepath){
     
     file.seekg(0);
     
-    FONTS fonts;
+    FONTDATA fonts;
     
     //READ NAME
     size_t fontNamelen=0;
@@ -268,55 +268,55 @@ void FontDataConverter::readBinaryFile(std::string filepath){
     
     for (int i=0; i<charCountSize; i++) {
         
-        FONTDATA fontData;
+        CHARACTERDATA characterData;
         
         //id int
         int idSize=0;
         file.read((char*)&idSize,sizeof(int));
-        file.read((char*)&fontData.ID, sizeof(idSize));
+        file.read((char*)&characterData.ID, sizeof(idSize));
         
         //x-position float
         float xPositionSize=0;
         file.read((char*)&xPositionSize,sizeof(float));
-        file.read((char*)&fontData.x, sizeof(xPositionSize));
+        file.read((char*)&characterData.x, sizeof(xPositionSize));
         
         //y-position
         float yPositionSize=0;
         file.read((char*)&yPositionSize,sizeof(float));
-        file.read((char*)&fontData.y, sizeof(yPositionSize));
+        file.read((char*)&characterData.y, sizeof(yPositionSize));
 
         //width
         float widthSize=0;
         file.read((char*)&widthSize,sizeof(float));
-        file.read((char*)&fontData.width, sizeof(widthSize));
+        file.read((char*)&characterData.width, sizeof(widthSize));
 
         //height
         float heightSize=0;
         file.read((char*)&heightSize,sizeof(float));
-        file.read((char*)&fontData.height, sizeof(heightSize));
+        file.read((char*)&characterData.height, sizeof(heightSize));
 
         //x-offset
         float xOffsetSize=0;
         file.read((char*)&xOffsetSize,sizeof(float));
-        file.read((char*)&fontData.xoffset, sizeof(xOffsetSize));
+        file.read((char*)&characterData.xoffset, sizeof(xOffsetSize));
 
         //y-offset
         float yOffsetSize=0;
         file.read((char*)&yOffsetSize,sizeof(float));
-        file.read((char*)&fontData.yoffset, sizeof(yOffsetSize));
+        file.read((char*)&characterData.yoffset, sizeof(yOffsetSize));
 
         //x advance
         float xAdvanceSize=0;
         file.read((char*)&xAdvanceSize,sizeof(float));
-        file.read((char*)&fontData.xadvance, sizeof(xAdvanceSize));
+        file.read((char*)&characterData.xadvance, sizeof(xAdvanceSize));
         
         //letter
         size_t letterlen=0;
         file.read((char*)&letterlen,sizeof(letterlen));
-        fontData.letter.resize(letterlen);
-        file.read((char*)&fontData.letter[0],letterlen);
+        characterData.letter.resize(letterlen);
+        file.read((char*)&characterData.letter[0],letterlen);
         
-        fonts.fontData.push_back(fontData);
+        fonts.characterData.push_back(characterData);
         
     }
     

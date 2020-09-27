@@ -29,7 +29,7 @@ private:
     /**
     @brief element representing the particle
     */
-    FONTS fonts;
+    FONTDATA fonts;
     
 public:
     
