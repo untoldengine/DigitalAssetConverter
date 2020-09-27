@@ -30,7 +30,7 @@ void ParticleDataConverter::parseXML(){
      float posXVariance=atof(particlePosXVarianceAttribute);
      float posYVariance=atof(particlePosYVarianceAttribute);
      
-    particle.positionVariance={posXVariance,posYVariance,0.0};
+     particle.positionVariance={posXVariance,posYVariance,0.0};
     
      //speed
      tinyxml2::XMLElement* speedElement = particleConfig->FirstChildElement("speed");
@@ -331,7 +331,7 @@ int ParticleDataConverter::blendingFactorMapping(int uBlending){
 
 void ParticleDataConverter::writeParticleDataToFile(std::ofstream &file){
     
-    //WRITE MODEL NAME
+    //WRITE Particle NAME
     //get the size of the string
     size_t particleNameLen=particle.name.size();
     file.write((char*)&particleNameLen,sizeof(particleNameLen));
