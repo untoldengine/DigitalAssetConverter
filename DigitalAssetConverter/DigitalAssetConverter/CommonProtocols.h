@@ -191,6 +191,37 @@ typedef struct{
     
 }FONTDATA;
 
+typedef struct{
+
+    std::string name;
+    float energy;
+    std::vector<float> color;
+    std::vector<float> localMatrix;
+    
+}DIRECTIONALLIGHT;
+
+
+typedef struct{
+    
+    std::string name;
+    float energy;
+    float falloutDistance;
+    float constantCoefficient;
+    float linearCoefficient;
+    float quadraticCoefficient;
+    std::vector<float> color;
+    std::vector<float> localMatrix;
+    
+}POINTLIGHT;
+
+typedef struct{
+    int numberOfDirectionalLights;
+    int numberOfPointLights;
+    std::vector<DIRECTIONALLIGHT> directionalLights;
+    std::vector<POINTLIGHT> pointLights;
+    
+}LIGHTS;
+
 //CONVEX HULL STRUCTURES
 typedef struct CONVEXHULLVERTEXSTRUCT CONVEXVERTEX;
 typedef CONVEXVERTEX *CONVEXHULLVERTEX;
