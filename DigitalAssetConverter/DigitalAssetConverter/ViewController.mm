@@ -15,6 +15,7 @@
 #include "ImageConverter.h"
 #include "ParticleDataConverter.h"
 #include "FontDataConverter.h"
+#include "LightDataConverter.h"
 #include <fstream>
 @implementation ViewController
 
@@ -190,11 +191,29 @@
            
        }
         
-    }
+    }else if ([self->exportTypeBox indexOfSelectedItem]==5 && filename.empty()==false){
+        
+        LightDataConverter lightConverter;
+         
+         if (lightConverter.readXML(assetPath+filename+".xmllight")) {
+             
+             if(lightConverter.writeBinaryToFile(exportPath+filename+".u4d")){
+
+                 lightConverter.readBinaryFile(exportPath+filename+".u4d");
+                 
+                 conversionSuccessful=true;
+
+                 outputWindow.stringValue=[NSString stringWithFormat:@"Light data, %@, was converted successfully",filenameString];
+                 
+             }
+             
+         }
+          
+      }
     
     if (conversionSuccessful==false) {
         
-        outputWindow.stringValue=@"Error: The destination file was not allowed to be opened. Click on the Project's Target->Signing & Capabilities->App Sandbox and make sure the File Access Type's permissions are set to Read/Write. The User Selected and Download folders should have read/write access.";
+        outputWindow.stringValue=@"Error: Select a file from the table to convert. If the problem persist, then the destination file was not allowed to be opened. Click on the Project's Target->Signing & Capabilities->App Sandbox and make sure the File Access Type's permissions are set to Read/Write. The User Selected and Download folders should have read/write access.";
     
     }
     
@@ -272,6 +291,7 @@
     NSArray *pngFiles=[self->assetFiles filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"self ENDSWITH '.png'"]];
     NSArray *particleFiles=[self->assetFiles filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"self ENDSWITH '.pex'"]];
     NSArray *fontFiles=[self->assetFiles filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"self ENDSWITH '.fnt'"]];
+    NSArray *lightFiles=[self->assetFiles filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"self ENDSWITH '.xmllight'"]];
     
     
     [self->textureNameField setHidden:true];
@@ -300,6 +320,10 @@
     }else if ([self->exportTypeBox indexOfSelectedItem]==4){
         
         self.filenamesContainer=fontFiles;
+        
+    }else if ([self->exportTypeBox indexOfSelectedItem]==5){
+        
+        self.filenamesContainer=lightFiles;
         
     }
     

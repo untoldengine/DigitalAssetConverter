@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		035FEE0625E046B1005669D7 /* LightDataConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 035FEE0425E046B1005669D7 /* LightDataConverter.mm */; };
 		0397E4D0251F8C940020EBD9 /* FontDataConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0397E4CE251F8C940020EBD9 /* FontDataConverter.mm */; };
 		03A96CC3251395AD00E8BA19 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 03A96CC2251395AD00E8BA19 /* AppDelegate.mm */; };
 		03A96CC6251395AD00E8BA19 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 03A96CC5251395AD00E8BA19 /* ViewController.mm */; };
@@ -25,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		035FEE0425E046B1005669D7 /* LightDataConverter.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LightDataConverter.mm; sourceTree = "<group>"; };
+		035FEE0525E046B1005669D7 /* LightDataConverter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LightDataConverter.h; sourceTree = "<group>"; };
 		0397E4CE251F8C940020EBD9 /* FontDataConverter.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = FontDataConverter.mm; sourceTree = "<group>"; };
 		0397E4CF251F8C940020EBD9 /* FontDataConverter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FontDataConverter.h; sourceTree = "<group>"; };
 		03A96CBE251395AD00E8BA19 /* DigitalAssetConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigitalAssetConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +98,8 @@
 				0397E4CE251F8C940020EBD9 /* FontDataConverter.mm */,
 				03A96CF525139E2200E8BA19 /* ParticleDataConverter.h */,
 				03A96CF425139E2200E8BA19 /* ParticleDataConverter.mm */,
+				035FEE0525E046B1005669D7 /* LightDataConverter.h */,
+				035FEE0425E046B1005669D7 /* LightDataConverter.mm */,
 				03A96CEA25139D5500E8BA19 /* Numerical.cpp */,
 				03A96CE925139D5500E8BA19 /* Numerical.h */,
 				03A96CF025139D5D00E8BA19 /* XMLParser */,
@@ -220,6 +225,7 @@
 				03A96CCE251395B100E8BA19 /* main.m in Sources */,
 				03A96CDF25139D4300E8BA19 /* DataConverter.mm in Sources */,
 				03A96CF325139D5D00E8BA19 /* tinyxml2.mm in Sources */,
+				035FEE0625E046B1005669D7 /* LightDataConverter.mm in Sources */,
 				03A96CF625139E2300E8BA19 /* ParticleDataConverter.mm in Sources */,
 				03A96CC3251395AD00E8BA19 /* AppDelegate.mm in Sources */,
 			);
